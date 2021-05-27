@@ -2,8 +2,11 @@
 
 .App .ant-layout-header {
   background: #fff;
-  padding: 0 8px;;
-  height: 56px;
-  line-height: 56px;
+  padding: 0 16px;;
   box-shadow: 0 2px 8px #f0f1f2;
+}
+
+
+.main {
+  padding: 24px;
 }

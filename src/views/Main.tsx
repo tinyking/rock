@@ -1,5 +1,6 @@
 import { Layout } from 'antd';
 import RockHeader from '../components/RockHeader';
+import Dashboard from './Dashboard';
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -10,7 +11,11 @@ const Main = () => (
       <Header>
           <RockHeader />
       </Header>
-      <Content>Content</Content>
+      <Content>
+          <div className="main">
+             <Dashboard />
+          </div>
+      </Content>
       <Footer>Footer</Footer>
     </Layout>
   </Layout>

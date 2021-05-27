@@ -11,7 +11,9 @@ const RockHeader = () => (
         </span>
       </Col>
       <Col flex={3}>
-        <RockNotification />
+        <Row justify="end">
+            <RockNotification />
+        </Row>
       </Col>
     </Row>
 );
