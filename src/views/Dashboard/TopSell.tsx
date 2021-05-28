@@ -1,5 +1,4 @@
-import { Card, Table, Switch, Radio, Form, Space } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
+import { Card, Table } from 'antd';
 
 const columns = [
     {
