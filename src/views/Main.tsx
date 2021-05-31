@@ -3,6 +3,10 @@ import RockHeader from '../components/RockHeader';
 import Dashboard from './Dashboard';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Suspense } from 'react';
+import Customer from './Customer';
+import CustomersList from './Customer/CustomersList';
+import AddCustomer from './Customer/AddCustomer';
+import CustomerView from './Customer/CustomerView';
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -18,7 +22,8 @@ const Main = () => (
              <Router>
                  <Suspense fallback={<div>Loading...</div>}>
                      <Switch>
-                         <Route exact path="/" component={Dashboard}></Route>
+                         <Route exact path="/" component={CustomerView}></Route>
+                         <Route path="/customers/add" component={AddCustomer} ></Route>
                      </Switch>
                  </Suspense>
              </Router>

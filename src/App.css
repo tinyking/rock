@@ -10,3 +10,12 @@
 .main {
   padding: 24px;
 }
+
+
+.ant-row+.ant-row {
+  margin-top: 16px;
+}
+
+.card-table .ant-card-body {
+  /* padding: 0; */
+}
