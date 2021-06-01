@@ -1,7 +1,8 @@
-import { HomeOutlined, UserOutlined } from '@ant-design/icons';
-import { Breadcrumb, Button, Card, Checkbox, Col, DatePicker, Form, Input, Radio, Row, Select, Typography } from 'antd';
+import { EditOutlined, HomeOutlined, MessageOutlined, UserOutlined } from '@ant-design/icons';
+import { Avatar, Breadcrumb, Button, Card, Checkbox, Col, DatePicker, Divider, Form, Input, Radio, Row, Select, Space, Typography } from 'antd';
 import React from 'react';
 
+const {Title, Text} = Typography;
 
 const CustomerView: React.FC = () => {
 
@@ -19,10 +20,27 @@ const CustomerView: React.FC = () => {
             </Col>
         </Row>
         <Row gutter={24}>
-        <Col span={8}>
-            <Card ></Card>
+        <Col span={6}>
+            <Card>
+                <Row gutter={24} justify="start" align="middle">
+                    <Col span={4}><Avatar size="large" src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Col>
+                    <Col>
+                        <Title level={3}>Kate Smith</Title>
+                        <Text type="secondary">Botsford and Sons</Text>
+                    </Col>
+                </Row>
+                <Row justify="space-around">
+                    <Col>
+                    <Space>
+                    <Button type="primary" icon={<MessageOutlined />}>Message</Button>
+                    <Button type="primary" icon={<EditOutlined />}>Edit Profile</Button>
+                    </Space>
+                    </Col>
+                </Row>
+                <Divider />
+            </Card>
         </Col>
-        <Col span={16}><Card ></Card></Col>
+        <Col span={18}><Card ></Card></Col>
         </Row>
         </>
     );
